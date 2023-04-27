@@ -8,5 +8,6 @@ namespace Blog_Core.Entities
 {
     public interface IEntityBase
     {
+        //xd
     }
 }
