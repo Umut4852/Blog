@@ -8,6 +8,7 @@ namespace Blog_Core.Entities
 {
     public abstract class EntityBase : IEntityBase
     {
+        public virtual string ad { get; set; }
         public virtual Guid Id { get; set; } = Guid.NewGuid();
         public virtual string DeleteBy { get; set; }
         public virtual string? ModifiedBy { get; set; }
