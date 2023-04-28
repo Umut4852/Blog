@@ -8,8 +8,10 @@ using Blog_Core.Entities;
 
 namespace Blog_Entity.Entities
 {
-    public class Category :EntityBase
+    public class Category : EntityBase
     {
-        public ICollection<Article> Articles { get; set;}
+
+        public string Name { get; set; }
+        public ICollection<Article> Articles { get; set; }
     }
 }
