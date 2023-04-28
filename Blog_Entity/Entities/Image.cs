@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Blog_Core.Entities;
+using static System.Net.Mime.MediaTypeNames;
 
 
 namespace Blog_Entity.Entities
@@ -13,5 +14,11 @@ namespace Blog_Entity.Entities
         public string FileName { get; set; }
         public string FileType { get; set; }
         public ICollection<Article> Articles { get; set;}
+
+        /*protected override void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Image>().HasNoKey();
+        }*/
+
     }
 }

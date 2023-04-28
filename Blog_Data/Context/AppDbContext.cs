@@ -6,7 +6,14 @@ namespace Blog_Data.Context
 {
     public class AppDbContext : DbContext
     {
-        protected AppDbContext()
+        /*
+        public DbSet<Images> Images { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Image>().HasNoKey();
+        }
+        */
+            protected AppDbContext()
         {
         }
 
@@ -17,5 +24,7 @@ namespace Blog_Data.Context
         public DbSet<Article> Articles { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Images> Images { get; set; }
+
+
     }
 }
