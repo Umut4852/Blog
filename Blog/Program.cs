@@ -1,4 +1,5 @@
 using Blog_Data.Context;
+using Blog_Entity.Entities;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

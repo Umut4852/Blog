@@ -11,14 +11,11 @@ namespace Blog_Entity.Entities
 {
     public class Image :EntityBase
     {
+        //public Guid ıd { get; set; }
         public string FileName { get; set; }
         public string FileType { get; set; }
         public ICollection<Article> Articles { get; set;}
 
-        /*protected override void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Image>().HasNoKey();
-        }*/
-
     }
+
 }

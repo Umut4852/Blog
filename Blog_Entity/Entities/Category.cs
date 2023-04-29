@@ -11,7 +11,7 @@ namespace Blog_Entity.Entities
     public class Category : EntityBase
     {
 
-        public string Name { get; set; }
+       // public string Category_Name { get; set; }
         public ICollection<Article> Articles { get; set; }
     }
 }
